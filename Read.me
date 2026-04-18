@@ -1,6 +1,25 @@
-#Time Series Modeling with Deep Learning: Classification using
-Transformer and Forecasting using LSTM
+#Time Series Modeling with Deep Learning: Classification using Transformer and Forecasting using LSTM
 
 This project entails a comparitive analysis between classificataions with deep learning using Transformer and Forecasting with LSTM 
 
+LSTM is the model that I picked to change: 
+
 The resutls showed that..
+
+## Baseline Model
+The original LSTM model follows the official Keras time-series forecasting example using the Jena Climate dataset. It uses:
+A single LSTM layer
+Fixed sequence length (historical window)
+Default batch size and learning rate
+Basic preprocessing and scaling
+One-step forecasting output
+
+## Increased Model Depth (Stacked LSTM)
+Modified from single LSTM → multiple LSTM layers
+Allows the model to learn:
+Low-level temporal patterns (first layer)
+Higher-level trends (deeper layers)
+Impact:
+Better ability to capture long-term dependencies
+Improved forecasting stability for complex weather patterns
+
